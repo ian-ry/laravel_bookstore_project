@@ -3,6 +3,8 @@
 
 @section('content')
 
+<link rel="stylesheet" href={{ asset('css/edit.css')}}>
+
 <h1>Edit a book.</h1>
 
 

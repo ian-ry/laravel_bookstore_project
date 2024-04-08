@@ -34,7 +34,10 @@ This is a Laravel/php/mysql project for a bookstore. Centered in CRUD operations
 The project is mainly focused in database management by using CRUD methods. The user can Create, Read, Update and Delete books from the database as needed.
 The main funcionality is in `/localhost/name_of_your_folder/public/bookstore`. From here, users can use the whole funcionality of the application.
 To create a new entry for the database, use the button `Add a new book...`. Other functions will be locked until a entry is created.
-Once any entry is created for the database, `Edit this book.` and `Delete this book.` will be accesible from `/localhost/name_of_your_folder/public/bookstore`. This buttons edit and delete the entry, respectivetly.
+Once any entry is created for the database, `Edit this book.` and `Delete this book.` will be accesible from `/localhost/name_of_your_folder/public/bookstore`. These buttons edit and delete the entry, respectivetly.
+
+### Example video:
+[Here is a video example on how does the application works.](https://youtu.be/lezdtgIa0Wo)
 
 ## Project Structure
 

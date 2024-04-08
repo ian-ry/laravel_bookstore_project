@@ -18,7 +18,9 @@
         <div>
             <fieldset>
                 <legend>Title: {{ $book-> title}}</legend>
-
+                
+                <label>id: </label>
+                <p>{{ $book->id }}</p>
 
                 <label>Author: </label>
                 <p>{{ $book->author_name }}</p>
@@ -32,12 +34,13 @@
                 <div>
                     <button><a href="{{ route('book.edit', $book->id) }}">Edit this book.</a></button>
 
-                    <form action="{{ route('book.destroy', $book->id)}}">
+                    <form action="{{ route('book.destroy', $book->id)}}" method="POST">
                         @method('DELETE')
                         @csrf
                         <button type="submit">Delete this book.</button>
                     </form>
                     
+
                 </div>
 
             </fieldset>

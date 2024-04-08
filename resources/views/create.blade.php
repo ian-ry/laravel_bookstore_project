@@ -3,6 +3,8 @@
 
 @section('content')
 
+<link rel="stylesheet" href={{ asset('css/create.css')}}>
+<div class="bg">
 <h1>Add a book.</h1>
 
 <form action="{{ route('book.store') }}" method="POST">
@@ -27,5 +29,5 @@
 
     <button type="submit">Add book.</button>
 </form>
-
+</div>
 @endsection
