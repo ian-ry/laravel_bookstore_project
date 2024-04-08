@@ -6,7 +6,7 @@
 <h1>Edit a book.</h1>
 
 
-<form action="{{ route('book.store') }}" method="POST">
+<form action="{{ route('book.update', $book->id) }}" method="POST">
     @csrf
     @method('PUT')
 

@@ -30,13 +30,14 @@
                 <p>{{ $book->published_year }}</p>
 
                 <div>
-                    <button><a href="{{ route('book.edit', '$book->id') }}">Edit this book.</a></button>
+                    <button><a href="{{ route('book.edit', $book->id) }}">Edit this book.</a></button>
 
                     <form action="{{ route('book.destroy', $book->id)}}">
                         @method('DELETE')
                         @csrf
                         <button type="submit">Delete this book.</button>
                     </form>
+                    
                 </div>
 
             </fieldset>
